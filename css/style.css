@@ -5,6 +5,9 @@ body{
     font-weight: 400;
     line-height: 30px;
 }
+strong {
+font-weight: bold;
+}
 .bright{
     color: #aaa;
 }
@@ -55,6 +58,10 @@ strong{
 }
 .cover{
     background: url('../img/overlay.png') no-repeat fixed center top , url('../img/banner.jpg') no-repeat fixed center top;
+    background-size: cover;
+}
+.cover-footer{
+    background: url('../img/overlay.png') no-repeat fixed center , url('../img/banner.jpg') no-repeat fixed center;
     background-size: cover;
 }
 .ba-container{
@@ -125,7 +132,9 @@ a{
 }
 .tree{
     font-size: 14px;
+    margin-bottom: 60px;
 }
+
 .ba-shadow-circle{
     box-shadow: 0px 0px 0px 7px rgba(144,144,144,0.25);
     display: inline-block;
@@ -138,15 +147,23 @@ a{
 }
 .ba-social li{
      display: inline-block;
-     margin-left: 25px;
-     margin-right: 25px;
+     padding-left: 20px;
+     padding-right: 20px;
  }
-.ba-social a{
+.ba-social a,
+.ba-footer a{
   color: #aaa;
   transition: color 0.2s ease-in-out;
 }
-.ba-social a:hover{
+.ba-social a:hover,
+.ba-footer a:hover{
     color: #666;
+}
+
+.ba-footer{
+    margin-top: 20px;
+    padding-bottom: 30px;
+    color: #aaa;
 }
 .ba-footer li{
     display:inline-block ;
@@ -159,21 +176,7 @@ a{
     border-left: 1px solid rgba(144, 144, 144, 0.25);
     border-right: 1px solid rgba(144, 144, 144, 0.25);
 }
-.ba-nav-footer li {
-    height: 30px;
-    line-height: 30px;
-    padding: 0 ;
-    border-left: solid;
-    border-width: 1px;
-    border-color: rgba(144, 144, 144, 0.25);
-    margin-left: 22px;
-    padding-left: 22px;
-}
-.ba-nav-footer li:first-child {
-    border-left: none;
-    margin-left: 0;
-    padding-left: 0;
-}
+
 /* typo */
 h1,h2,h3,h4,h5,h6 {
     margin-bottom: 10px;
@@ -248,7 +251,7 @@ h5,h6 {
     background-color: #f32853;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 1.35em;
+    font-size: 19px;
     font-family: inherit;
     letter-spacing: 1px;
     transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
@@ -300,4 +303,7 @@ h5,h6 {
 }
 .ba-row{
     padding: 90px 0;
+}
+.ba-row-footer{
+    padding: 90px 0 0 0;
 }
